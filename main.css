@@ -85,7 +85,7 @@ h6 {
   font-size: 20px;
   color: #273d46;
   font-weight: bold;
-  background-color: #d6d1d4;
+  background-color: hsla(323, 20%, 54%, 0.514);
   border-radius: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -205,3 +205,4 @@ h6 {
   border: 1px solid #7fbed5;
   box-shadow: 0px 0px 20px -1px rgba(127, 190, 213, 0.93);
 } */
+
