@@ -11,71 +11,197 @@ html {
   box-sizing: inherit;
 }
 
-.wrapper {
-  margin: 50px auto 0 10px;
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-.autos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
-  padding: 20px;
+input,
+button,
+textarea {
+  font-family: inherit;
 }
 
-.autoCard {
-  background: #fff;
-  padding: 20px;
-}
-
-h2 {
-  font-size: 18px;
-}
+/* кнопка для очистки поля */
+/* input::-ms-clear {
+  display: none;
+} */
 
 button {
-  background: #1b1b1b;
-  color: #fff;
-  padding: 10px 30px;
-  border: 0;
-  font-size: 16px;
   cursor: pointer;
 }
 
-h1 {
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* img {
+  vertical-align: top;
+} */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+/*--------------------*/
+
+.section {
+  width: 1440px;
+  height: 1700px;
+  background-color: #e8e8e8;
+  margin: 0 auto;
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.section .list-h1 h1 {
+  font-size: 20px;
+  color: #273d46;
+  font-weight: bold;
+  background-color: #d6d1d4;
+  border-radius: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 80px;
+  /* margin-bottom: 1px; */
+}
+
+.section .list-ul ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #2f7a96;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+}
+.section .list-ul ul {
+  background-color: antiquewhite;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  /* text-decoration: overline; */
+}
+.section .list-ul ul li {
+  padding: 10px;
+  /* text-decoration: underline; */
+}
+
+.section .list-ul a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section .list-ul a:active {
+  border: 3px solid #b0b0b0;
+}
+.section .list-ul a:hover {
+  /* width: 300px;
+  height: 52px; */
+  background-color: #d8cf9b;
+  color: #222122;
+  padding: 5px 100px 5px 100px;
+  box-shadow: 0px 0px 30px -1px rgba(127, 190, 213, 0.93);
+}
+
+.section .list-ul a:focus {
+  border: 1px solid #7fbed5;
+  /* box-shadow: 0px 0px 30px -1px rgba(127, 190, 213, 0.93); */
+  padding: 5px 100px 5px 100px;
+}
+
+/* .list-first ul li:nth-child(1) {
+  text-decoration: line-through;
+}
+.list-first ul li:nth-child(2) {
+  font-weight: 700;
+} */
+/* .list-first ul li:nth-child(3) {
+  font-style: italic;
+}
+.list-first ul li:nth-child(4) {
+  text-transform: uppercase;
+} */
+
+/* .list-first ul li:nth-child(1):hover {
+  text-decoration: none;
+}
+.list-first ul li:nth-child(2):hover {
+  font-weight: 400;
+  color: #d55a5a;
+  background: url("../img/icons/check_icon_95.png") left 5px no-repeat;
+}
+.list-first ul li:nth-child(3):hover {
+  font-style: normal;
+}
+.list-first ul li:nth-child(4):hover {
+  text-transform: none;
+} */
+
+/* .btn-primary {
+  background: url("../img/icons/shape_2_9.png") left no-repeat;
+  background-position: 155px 15px;
+  opacity: 0.8;
   text-align: left;
-  color: rgb(48, 45, 45);
-  margin: 20px 10px 10px;
-  font-weight: bold;
+  padding: 0 0 0 30px;
+  background-color: #80b7b3;
+  width: 199px;
+  height: 44px;
+  box-shadow: 0px 6px 40px 0px rgba(128, 183, 179, 0.54);
+  font-family: Arial;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  border-radius: 30px;
+}
+.btn-primary:hover {
+  background-color: #3a5856;
+}
+.btn-primary:active {
+  background-color: #818181;
 }
 
-.news {
-  color: orange;
+.input {
+  margin-top: 124px;
+  margin-left: 290px;
 }
 
-.soccer {
-  color: green;
-  font-weight: bold;
+.input-primary {
+  width: 294px;
+  height: 52px;
+  border: 1px solid #b0b0b0;
 }
 
-h5 {
-  background-color: grey;
-  border: 2px solid red;
-}
-
-.shcool {
-  margin: 50px 30px 30px 50px;
-}
-
-.my-section {
-  background-color: hotpink;
-  display: flex; /*flex гибкий*/
-  flex-direction: column; /*direction направление column колонна*/
-  align-items: center;
-}
-
-.my-button {
-  margin: 5px;
-}
-
-input {
-  margin: 5px;
-}
+.input-primary:focus {
+  border: 1px solid #7fbed5;
+  box-shadow: 0px 0px 20px -1px rgba(127, 190, 213, 0.93);
+} */
