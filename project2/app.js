@@ -1,11 +1,20 @@
-let myButton = document.querySelector(".my-button");
-let myInput = document.querySelector(".my-input");
-let myHeader = document.querySelector(".header");
+const numberOne = document.querySelector(".number-one");
+const button = document.querySelector(".button");
+const result = document.querySelector(".result");
 
-myButton.addEventListener("click", function () {
-  let amount = parseInt(myInput.value);
-  let VAT = 0.15;
-  myHeader.innerText = `Сумма НДС со ${amount} рублей равна ${
-    amount * VAT
-  } рублей`;
-});
+button.addEventListener('click', function () {
+	let price = 100;
+	let age = numberOne.value;
+
+	//Если младьше 8 цена 0
+	if (age < 8) {
+		price = 0;
+		//если младьше 20 лет цена -20 процентов
+	} if (age < 20) {
+		price = price * 0.8;
+	} else {
+		price = price;
+	}
+
+	result.innerText = `Цена билета равна ${price}`;
+})
